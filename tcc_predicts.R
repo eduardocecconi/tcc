@@ -1,3 +1,35 @@
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(stats)
+library(reshape2)
+library(scales)
+library(PerformanceAnalytics)
+library(jtools)
+library(ggstance)
+library(nortest)
+library(car)
+library(bestNormalize)
+library(olsrr)
+library(lmtest)
+library(overdisp)
+library(MASS)
+library(pscl)
+library(Hmisc)
+library(caret)
+library(pROC)
+library(ROCR)
+library(kableExtra)
+library(mpath)
+library(nonnest2)
+library(nnet)
+
+#SET.SEED PARA GARANTIR REPRODUÇÃO DOS RESULTADOS
+set.seed(23)
+
+#FUNÇÃO PARA EVITAR NOTAÇÃO CIENTÍFICA
+options(scipen=999)
+
 ###CARREGAMENTO DOS MODELOS
 
 zeroinfl <- readRDS("step_regressao_binomial_zeroinfl.rds")
